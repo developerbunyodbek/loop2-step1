@@ -1,0 +1,155 @@
+/* ROOT */
+:root {
+  --background-color: #d77e7c;
+  --primary-color: #fff;
+  --text-color: #e8afae;
+}
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+.container {
+  width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* MAIN */
+.main-content {
+  flex-grow: 1;
+  margin: 75px 0;
+}
+
+/* STYLES */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 56px;
+  font-weight: bold;
+  transition: color 0.2s linear;
+}
+
+.nav-link:hover {
+  color: #f1caca;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+.info {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.hero-content {
+  display: flex;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content-box {
+  width: 300px;
+  background-color: #353334;
+  position: relative;
+  padding: 100px 50px;
+}
+
+.hero-content-box:nth-child(2) {
+  background-color: #2d2b2b;
+}
+
+.hero-content-box:last-child {
+  background-color: #1d1b1b;
+}
+
+.hero-content-box-icon {
+  position: absolute;
+  background-color: var(--text-color);
+  color: #774747;
+  padding: 38px 46px;
+  transition: background-color 0.2s linear;
+}
+
+.hero-content-box-icon:hover {
+  background-color: #f1caca;
+}
+
+.left {
+  top: 0;
+  left: -100px;
+}
+
+.right {
+  top: 0;
+  right: -100px;
+}
+
+.hero-title {
+  color: var(--background-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.hero-title-value {
+  margin: 0;
+  font-weight: 500;
+  font-size: 34px;
+}
+
+.hero-content-box-btn {
+  padding: 15px 100px;
+  color: var(--primary-color);
+  background-color: #121212;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  left: 20px;
+  font-size: 16px;
+  bottom: -25px;
+  border-radius: 5px;
+  transition: bottom 0.2s linear;
+}
+
+.hero-content-box-btn:hover {
+  bottom: -20px;
+}
