@@ -78,7 +78,7 @@ img {
   color: var(--primary-color);
 }
 
-.info {
+.header-info {
   font-size: 18px;
   margin-bottom: 60px;
 }
@@ -107,7 +107,8 @@ img {
   position: absolute;
   background-color: var(--text-color);
   color: #774747;
-  padding: 38px 46px;
+  width: 100px;
+  height: 100px;
   transition: background-color 0.2s linear;
 }
 
@@ -116,13 +117,19 @@ img {
 }
 
 .left {
+  position: absolute;
   top: 0;
   left: -100px;
+  border: 0;
+  cursor: pointer;
 }
 
 .right {
+  position: absolute;
   top: 0;
   right: -100px;
+  border: 0;
+  cursor: pointer;
 }
 
 .hero-title {
@@ -130,6 +137,7 @@ img {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 .hero-title-value {
   margin: 0;
   font-weight: 500;
@@ -147,9 +155,14 @@ img {
   font-size: 16px;
   bottom: -25px;
   border-radius: 5px;
-  transition: bottom 0.2s linear;
+  transition: transform 0.2s linear;
+  cursor: pointer;
 }
 
 .hero-content-box-btn:hover {
-  bottom: -20px;
+  transform: translateY(-8px);
+}
+
+.hero-content-icon {
+  font-size: 18px;
 }
